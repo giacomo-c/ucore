@@ -12,6 +12,13 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf install -y udica
 
+# install latest rclone
+dnf install -y https://downloads.rclone.org/rclone-current-linux-amd64.rpm
+
+# https://rclone.org/commands/rclone_mount/#rclone-as-unix-mount-helper
+ln -rs /usr/bin/rclone /sbin/mount.rclone
+ln -rs /usr/bin/rclone /usr/bin/rclonefs
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
