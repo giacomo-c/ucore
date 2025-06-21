@@ -29,7 +29,3 @@ ln -rs /usr/bin/rclone /usr/bin/rclonefs
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
-
-# needed for nvidia gpu container useage
-
-nvidia-ctk cdi generate
