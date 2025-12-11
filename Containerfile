@@ -1,4 +1,4 @@
-FROM ghcr.io/ublue-os/ucore-minimal:stable-nvidia
+FROM ghcr.io/ublue-os/ucore-minimal:stable-nvidia-lts
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:stable
